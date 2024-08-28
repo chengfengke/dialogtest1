@@ -1,0 +1,52 @@
+{
+  
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/studentdialog/studentdialog",
+    "pages/teacherdialog/teacherdialog",
+    "pages/logs/logs",
+    "pages/profile/profile",
+    "custom-tab-bar/index",
+    "pages/history/history",
+    "pages/identity/identity",
+    "pages/teacherhistory/teacherhistory"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationStyle": "custom"
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+    "van-image": "@vant/weapp/image/index",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-checkbox": "@vant/weapp/checkbox",
+    "van-picker": "@vant/weapp/picker",
+    "van-popup": "@vant/weapp/popup",
+    "van-datetime-picker": "@vant/weapp/datetime-picker",
+    "van-area":"@vant/weapp/area"
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "聊天"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的"
+      }
+    ]
+  }
+}
