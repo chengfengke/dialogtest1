@@ -1,0 +1,5 @@
+<!--custom-tab-bar/index.wxml-->
+<van-tabbar active="{{ activeTab }}" bind:change="onChange">
+  <van-tabbar-item icon="{{chatActive}}" name="chat">聊天</van-tabbar-item>
+  <van-tabbar-item icon="{{profileActive}}" name="profile">我的</van-tabbar-item>
+</van-tabbar>

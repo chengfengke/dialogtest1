@@ -1,0 +1,14 @@
+{
+  "usingComponents": {},
+  "tabBar": {
+    "selected": 0,
+    "custom":false,
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text":"聊天"
+    },{
+      "pagePath": "pages/profile/profile",
+      "text":"我的"
+    }]
+  }
+}
