@@ -1,0 +1,206 @@
+/* 顶部导航栏 */
+/* 顶部栏样式 */
+.top-bar {
+  margin-top: 80rpx; /*跟其他页面的margin-top不是很一样*/
+  display: flex; /*使用flex布局*/
+  flex-direction: row;
+  align-items:center;
+  width: 100%; /* 根据需要，您可以设置顶部栏的宽度 */
+  padding: 0 10rpx;
+  box-sizing: border-box; /* 使内边距不影响总宽度 */
+  margin-bottom: 50rpx;
+}
+
+/* 返回图标样式 */
+.return-icon {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10px;
+}
+
+/* 应用头像样式 */
+.app-avatar {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 10px;
+}
+/* 应用信息样式 */
+.app-info {
+  display: flex;
+  align-items: center;
+  transform: translateX(-10%);
+  flex-direction: column;
+  flex-grow: 1; /* 让app-info填充剩余空间 */
+  margin-right: 10px; 
+}
+
+/* 应用名称样式 */
+.app-name {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5rpx;
+}
+
+/* 应用描述样式 */
+.app-description {
+  font-size: 10px;
+  color: #999;
+}
+
+/* 导航图标样式 */
+.icon-image {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px; /* 与标题的间隔 */
+}
+
+
+
+/* 页面容器 */
+/* .main {
+  height: 400rpx;
+} */
+
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.selColor {
+  background: #ffffff;
+}
+.page-container {
+  margin: 0;
+  min-height: 100vh; /*(最小高度设置为视口的100%*/
+  padding-bottom: 60px; /* 为底部导航留出空间 */
+  background-color: #ffffff; 
+}
+
+.page-section-swiper{
+  margin-top: 20rpx;
+  display: flex;
+  height: 275 rpx;
+  background-color: rgb(224, 224, 224);
+  margin-bottom: 50rpx;
+  width: 100%;
+}
+.swiper-images{
+  width: 100%;
+  /* height: 200rpx; */
+  border-radius: 0rpx 0rpx 16rpx 16rpx;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 500rpx;
+  background-color: #ffffff;
+}
+
+.Avatar{
+  height: 280rpx;
+  width: 280rpx;
+}
+
+.StudentClick{
+  margin-left: 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  height: 500rpx;
+  width: 320rpx;
+  background: #ffffff;
+  border: 0.5rem solid #FFECEC;
+}
+
+.TeacherClick{
+  margin-right: 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500rpx;
+  width: 320rpx;
+  background: #ffffff;
+  border: 0.5rem solid #5583E3;
+}
+/* 按钮通用样式
+.button {
+  height: 300rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* 增加按钮间距 */
+  /* padding: 10px; */
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 添加阴影 */
+  /* background-color: #ffffff; 背景色 */
+/* }  */
+
+/* 文本样式 */
+.text {
+  font-size: 16px; /* 字体大小 */
+  color: #333; /* 字体颜色 */
+}
+
+/*功能栏*/
+.funcitonlist{
+  margin-top: 50rpx;
+  display: grid;
+  grid-template-columns:repeat(auto-fill,100px);/** 平铺宽度为100px的单元格 */
+  grid-template-rows: 150rpx;/** 设置高度为100px */
+  grid-auto-rows: 150rpx;/** 当容易高度不够时，多余的组件高度将怎么分配，默认的高度由单元格内容决定 */
+  justify-content: center;/** 水平居中  */
+                        
+}
+.funtionitem {
+  font-size: 1em;
+  border: 1px solid #e5e4e9;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ImgButtonIcon{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+/* Vant Cell 样式调整，如果需要的话 */
+.van-cell {
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px; /* 添加间隔 */
+}
+
+.van-cell:last-child {
+  margin-bottom: 0; /* 最后一个 cell 不需要底部间隔 */
+}
+
+/* Vant Icon 样式调整，如果需要的话 */
+.van-icon {
+  font-size: 20px; /* 图标大小 */
+  color: #1989fa; /* 图标颜色 */
+}
+
+
+/* 底部导航样式 */
+van-tabbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1); /* 顶部阴影 */
+}
+
+/* 底部导航项样式 */
+van-tabbar-item {
+  color: #7c7c7c; /* 默认颜色 */
+}
+
+van-tabbar-item.van-tabbar-item--active {
+  color: #09BB07; /* 激活颜色 */
+}
+
