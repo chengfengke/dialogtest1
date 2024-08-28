@@ -1,0 +1,135 @@
+/* pages/Profile/Profile.wxss */
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1; /* 保证每个nav-item都有相同的空间 */
+}
+
+.nav-divider {
+  height: 50%;
+  width: 1px;
+  background-color: #000; /* 你可以调整为需要的颜色 */
+}
+
+.nav-icon {
+  width: 24px; /* 或根据需要进行调整 */
+  height: 24px; /* 或根据需要进行调整 */
+}
+
+.nav-text {
+  font-size: 12px; /* 或根据需要进行调整 */
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+
+.profile {
+  margin-top:150rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.avatar {
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 50rpx;
+}
+
+.userid {
+  color: #888;
+}
+
+/* .coins {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+} */
+
+.balance{
+  display: flex;
+  justify-content: center;
+}
+.recharge-btn {
+  color: #fff;
+  background-color: #1e90ff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 10px;
+  height: 34px;
+}
+
+/*四个按钮*/
+.function-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-top: 20px;
+}
+
+.function-item {
+  margin-top: 20rpx;
+  width: 650rpx;
+  display: flex;
+  border-bottom: 1px solid #eee;
+  border-radius: 20rpx; /* Border-radius for all items */
+  background-color: white;
+  align-items: center;
+  justify-content:flex-start;
+  margin-bottom: 15rpx; /* Consistent margin-bottom for all items */
+}
+
+.function-icon {
+  width: 50rpx; 
+  height: 50rpx; 
+  margin-right: 180rpx; 
+} 
+
+/* Vant Icon 样式调整，如果需要的话 */
+.van-icon {
+  font-size: 20px; /* 图标大小 */
+  color: #1989fa; /* 图标颜色 */
+}
+
+van-tabbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1); /* 顶部阴影 */
+}
+
+/* 底部导航项样式 */
+van-tabbar-item {
+  color: #7c7c7c; /* 默认颜色 */
+}
+
+van-tabbar-item.van-tabbar-item--active {
+  color: #09BB07; /* 激活颜色 */
+}
+
+
