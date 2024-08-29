@@ -9,7 +9,7 @@ Page({
    */
   data: {
     appName:"编辑资料",
-    Avatar:"cloud://dialogtest-5g1chgyo87fcdefd.6469-dialogtest-5g1chgyo87fcdefd-1325881522/image/student.png",
+    Avatar:"cloud://mamashengde-4gg30e3261e1084b.6d61-mamashengde-4gg30e3261e1084b-1329081927/images/student.png",
     docid : "",
     nickName:"",
     gender:"",

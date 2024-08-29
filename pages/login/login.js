@@ -1,6 +1,6 @@
 Page({
   data: {
-    avatarPath: 'cloud://dialogtest-5g1chgyo87fcdefd.6469-dialogtest-5g1chgyo87fcdefd-1325881522/image/avatar-XiaoXi.png', // Path to the avatar image
+    avatarPath: 'cloud://mamashengde-4gg30e3261e1084b.6d61-mamashengde-4gg30e3261e1084b-1329081927/images/avatar-XiaoXi.png', // Path to the avatar image
     checked: false,
     openid: "",
     inviteCode: "",
@@ -20,9 +20,9 @@ Page({
     wx.cloud.callFunction({
       name: 'getWXContext',
       success: res => {
-        console.log('openid:', res.result.openid);
+        console.log('openid:', res.result.userInfo.openId);
         this.setData({
-          openid: res.result.openid,
+          openid: res.result.userInfo.openId,
         });
       },
       fail: err => {
@@ -79,6 +79,8 @@ Page({
           });
         }
         const inviteCodeId = res.data[0]._id;
+        console.log(res.data[0]._id)
+        console.log(this.data.openid)
         if (res.data.length > 0 && res.data[0].flag === null) {
           db.collection('invitecode').doc(inviteCodeId).update({
             data: {
