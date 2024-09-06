@@ -9,7 +9,7 @@ Page({
    */
   data: {
     appName:"编辑资料",
-    Avatar:"cloud://mamashengde-4gg30e3261e1084b.6d61-mamashengde-4gg30e3261e1084b-1329081927/images/student.png",
+    Avatar:"cloud://mamashengde-4gg30e3261e1084b.6d61-mamashengde-4gg30e3261e1084b-1329081927/images/StudentAvatar.png",
     docid : "",
     nickName:"",
     gender:"",
@@ -32,16 +32,13 @@ Page({
       name: 'getWXContext',
       data: {},
       success: res => {
-        console.log('openid:', res.result.openid);
-        const openid = res.result.openid;
-  
-        // 将 openid 设置到页面数据中
+        console.log('openid:', res.result.userInfo.openId);
         this.setData({
-          openid: openid
+          openid: res.result.userInfo.openId,
         });
   
         // 在获取到 openid 之后执行数据库查询
-        this.fetchUserData(openid);
+        this.fetchUserData(this.data.openid);
       },
       fail: err => {
         console.error('获取 openid 失败', err);

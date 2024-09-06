@@ -11,7 +11,7 @@ Page({
     inputText: '', // 用户输入的文本
     currentWord: 0, // 已经输入的字符长度
     systemMessageLength: 0, // 系统消息的字符长度
-    userAvatar: '	cloud://mamashengde-4gg30e3261e1084b.6d61-mamashengde-4gg30e3261e1084b-1329081927/images/student.png', // 从index页面获取的用户头像URL
+    userAvatar: 'cloud://mamashengde-4gg30e3261e1084b.6d61-mamashengde-4gg30e3261e1084b-1329081927/images/StudentAvatar.png', // 从index页面获取的用户头像URL
     systemAvatar: 'cloud://mamashengde-4gg30e3261e1084b.6d61-mamashengde-4gg30e3261e1084b-1329081927/images/teacher.png', // 系统固定的头像URL
     inputWidth: 100, 
     isInputActive: false,

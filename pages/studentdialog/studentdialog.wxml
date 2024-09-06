@@ -17,7 +17,7 @@
         <view class="message {{item.type}}">
           {{item.content}}
         </view>
-        <image wx:if="{{item.type === 'user'}}" src="cloud://mamashengde-4gg30e3261e1084b.6d61-mamashengde-4gg30e3261e1084b-1329081927/images/student.png" class="user-gif"/>
+        <image wx:if="{{item.type === 'user'}}" src="cloud://mamashengde-4gg30e3261e1084b.6d61-mamashengde-4gg30e3261e1084b-1329081927/images/StudentAvatar.png" class="user-gif"/>
       </view>
     </block>
     <view class="placeholder"></view> 

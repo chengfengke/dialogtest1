@@ -3,7 +3,7 @@
 
     <!-- 用户信息 -->
     <view class="profile">
-        <image class="avatar" src="cloud://mamashengde-4gg30e3261e1084b.6d61-mamashengde-4gg30e3261e1084b-1329081927/images/student.png"/>
+        <image class="avatar" src="cloud://mamashengde-4gg30e3261e1084b.6d61-mamashengde-4gg30e3261e1084b-1329081927/images/StudentAvatar.png"/>
         <text class="username">{{ username }}</text>
         <text class="userid">ID: {{ userID }}</text>
     </view>

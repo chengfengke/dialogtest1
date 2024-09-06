@@ -33,10 +33,10 @@ Page({
     wx.cloud.callFunction({
       name: 'getWXContext',
       success: res => {
-        console.log('openid:', res.result.openid);
+        console.log('openid:', res.result.userInfo.openId);
         this.setData({
-          UserID: res.result.openid,
-        })
+          openid: res.result.userInfo.openId,
+        });
       },
       fail: err => {
         console.error('获取openid失败', err);

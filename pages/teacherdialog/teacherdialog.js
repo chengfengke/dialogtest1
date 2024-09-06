@@ -51,7 +51,7 @@ Page({
     const self = this;
     console.log(self.data.messages);
     wx.request({
-      url: 'http://5.tcp.vip.cpolar.cn:13267/chat/knowledge_base_chat',
+      url: 'http://localhost:7861/chat/knowledge_base_chat',
       method: 'POST',
       data: {
         query: inputText,
